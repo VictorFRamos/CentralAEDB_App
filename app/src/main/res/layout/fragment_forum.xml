@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView12"
+        android:layout_marginStart="148dp"
+        android:background="@android:drawable/ic_input_get"
+        android:backgroundTint="#337ab7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fórum"
+        android:id="@+id/textView13"
+        android:textColor="#337ab7"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gvForum"
+        tools:listitem="@android:layout/simple_list_item_2"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

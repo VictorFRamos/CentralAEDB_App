@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="centralaedb.centralaedb_app.fragmentos.fragmentInicio"
+    android:background="#ffffff">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtTexto"
+        android:layout_gravity="left|top"
+        android:contentDescription="@string/Digite"
+        android:autoText="false"
+        android:editable="false"
+        android:hint="Digite aqui.."
+        android:inputType="text"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/gvTimeline"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPublicar"
+        android:layout_gravity="top|right"
+        android:background="#337ab7"
+        android:layout_alignBottom="@+id/txtTexto"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtTexto"
+        android:layout_alignParentRight="true"
+        android:text="Postar"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_alignTop="@+id/txtTexto"
+        android:maxWidth="61dp"
+        android:minWidth="61dp" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gvTimeline"
+        android:layout_gravity="center_horizontal|top"
+        tools:listitem="@android:layout/simple_expandable_list_item_2"
+        android:listSelector="#e1e1e1e1"
+
+        android:layout_below="@+id/txtTexto"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView8"
+        android:background="@android:drawable/ic_menu_myplaces"
+        android:textColor="#337ab7"
+        android:clickable="false"
+        android:backgroundTint="#337ab7"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtTexto"
+        android:layout_marginStart="92dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inicio"
+        android:id="@+id/textView9"
+        android:textColor="#337ab7"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/textView8" />
+
+
+</RelativeLayout>

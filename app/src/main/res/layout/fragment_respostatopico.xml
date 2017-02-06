@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvTitulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#337AB7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/TvNomeData"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#9cb3c7" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="155dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/TvNomeData"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/anonimo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvStatus"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imageView4"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvParticipacao"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvPonto"
+        android:layout_below="@+id/tvParticipacao"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvParticipacao"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvAgradecimento"
+        android:layout_below="@+id/tvPonto"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvPonto"
+        android:background="#5cb85c"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvTexto"
+        android:layout_below="@+id/TvNomeData"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView4"
+        android:background="#f6f6f6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvAss"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_above="@+id/tvParticipacao"
+        android:layout_alignEnd="@+id/tvTexto"
+        android:layout_toEndOf="@+id/ratingBar"
+        android:textAlignment="center" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agardecer"
+        android:id="@+id/btnAgradecer"
+        android:background="#fff"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toEndOf="@+id/ratingBar"
+        android:textSize="13dp"
+        android:padding="3dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responder"
+        android:id="@+id/button4"
+        android:background="#337ab7"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/tvAgradecimento"
+        android:layout_alignEnd="@+id/tvAss"
+        android:layout_toEndOf="@+id/btnAgradecer" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView4"
+        android:layout_below="@+id/tvAgradecimento"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
